@@ -1,0 +1,48 @@
+{
+  "AUTHOR_NAME": "Clóvis Paulo Silva Filho",
+  "TARGET_AUDIENCE": "PESSOAS QUE LEEM O MESMO TEMA DO LIVRO ANEXADO",
+  "TONE_OF_VOICE": "FACILITADOR DO ENTENDIMENTO DO LIVRO INICIAL",
+  "MIN_PAGES": 70,
+  "MAX_PAGES": 100,
+  "VECTOR_DB_PROVIDER": "ChromaDB",
+  "LLM_MODEL": "gemini-3.8-flash",
+  "DESIGN_TYPOGRAPHY": "Garamond",
+  "DESIGN_SPACING": 1.38,
+  "DEFAULT_PAGE_SIZE": "A5",
+  "AVAILABLE_PAGE_SIZES": [
+    {
+      "id": "A5",
+      "name": "A5 (148 × 210 mm)",
+      "description": "Padrão Editorial / Não-Ficção (Recomendado)",
+      "widthMm": 148,
+      "heightMm": 210
+    },
+    {
+      "id": "TRADE",
+      "name": "Trade Book 6\" × 9\" (152 × 229 mm)",
+      "description": "Padrão Internacional / Amazon KDP",
+      "widthMm": 152.4,
+      "heightMm": 228.6
+    },
+    {
+      "id": "DIGEST",
+      "name": "Digest 5.5\" × 8.5\" (140 × 216 mm)",
+      "description": "Romance & Desenvolvimento Pessoal",
+      "widthMm": 139.7,
+      "heightMm": 215.9
+    },
+    {
+      "id": "A4",
+      "name": "A4 (210 × 297 mm)",
+      "description": "Manual Técnico / Apostila / Relatório",
+      "widthMm": 210,
+      "heightMm": 297
+    }
+  ],
+  "AVAILABLE_TYPOGRAPHIES": [
+    "Garamond",
+    "Baskerville",
+    "Palatino Linotype",
+    "Georgia"
+  ]
+}

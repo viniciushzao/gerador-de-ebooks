@@ -1,0 +1,15 @@
+# Antigravity ignore file
+node_modules/
+.next/
+dist/
+build/
+.git/
+*.log
+data/uploads/*.pdf
+data/vectorstore/
+data/*.db*
+tmp/
+scratch/
+coverage/
+.DS_Store
+Thumbs.db

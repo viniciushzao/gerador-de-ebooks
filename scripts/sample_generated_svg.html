@@ -1,0 +1,79 @@
+
+    <html>
+      <body style="background: #ffffff; display: flex; align-items: center; justify-content: center; height: 100vh;">
+        <div style="border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px;">
+          <svg viewBox="0 0 470 470" width="470" height="470" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+    <linearGradient id="heatGradient" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#d97706;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#b45309;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="combustionGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b45309;stop-opacity:0.7" />
+      <stop offset="50%" style="stop-color:#d97706;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="flowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0284c7;stop-opacity:0.6" />
+      <stop offset="50%" style="stop-color:#334155;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  <g>
+    <!-- Technical Blueprint -->
+    <!-- Cylinder Walls -->
+    <rect x="160" y="60" width="150" height="350" rx="5" ry="5" fill="none" stroke="#334155" stroke-width="1.5" />
+
+    <!-- Piston Body -->
+    <rect x="175" y="290" width="120" height="90" rx="3" ry="3" fill="none" stroke="#334155" stroke-width="1.5" />
+    <!-- Piston Crown (top part) -->
+    <path d="M175 290 Q235 270 295 290 L295 290 L175 290 Z" fill="none" stroke="#334155" stroke-width="1.5" />
+
+    <!-- Piston Rings -->
+    <line x1="175" y1="295" x2="295" y2="295" stroke="#0f172a" stroke-width="1.0" />
+    <line x1="175" y1="300" x2="295" y2="300" stroke="#0f172a" stroke-width="1.0" />
+
+    <!-- Valves (simplified cross-section) -->
+    <!-- Intake Valve -->
+    <path d="M190 80 L190 110 C190 120 200 120 200 110 L200 80 Z" fill="none" stroke="#0f172a" stroke-width="1.0" />
+    <circle cx="195" cy="120" r="12" fill="none" stroke="#0f172a" stroke-width="1.0" />
+    <!-- Exhaust Valve -->
+    <path d="M270 80 L270 110 C270 120 280 120 280 110 L280 80 Z" fill="none" stroke="#0f172a" stroke-width="1.0" />
+    <circle cx="275" cy="120" r="12" fill="none" stroke="#0f172a" stroke-width="1.0" />
+
+    <!-- Combustion Chamber Outline (top of cylinder, above piston) -->
+    <path d="M160 150 C160 120 170 100 190 100 C210 100 225 90 235 90 C245 90 260 100 280 100 C300 100 310 120 310 150 L310 290 L160 290 Z" fill="none" stroke="#0284c7" stroke-width="1.0" />
+
+    <!-- Spark Plug (simplified) -->
+    <path d="M235 60 L235 75 M230 75 L240 75" stroke="#0f172a" stroke-width="1.0" />
+    <circle cx="235" cy="80" r="4" fill="none" stroke="#0f172a" stroke-width="1.0" />
+
+    <!-- Organic Flow Lines and Planes -->
+    <!-- Combustion Vortex/Heat -->
+    <path d="M235 85 C255 120 265 160 255 180 C245 200 225 200 215 180 C205 160 215 120 235 85 Z" fill="url(#combustionGradient)" opacity="0.6" />
+    <path d="M235 85 C248 105 253 130 248 150 C243 170 230 170 225 150 C220 130 227 105 235 85 Z" fill="url(#heatGradient)" opacity="0.7" />
+
+    <!-- Dynamic Heat Lines -->
+    <path d="M220 100 C210 115 200 140 205 160 C210 180 230 190 245 180 C260 170 270 150 265 130 C260 110 240 95 220 100 Z" fill="none" stroke="url(#heatGradient)" stroke-width="1.5" opacity="0.8" />
+    <path d="M235 90 Q250 110 260 140 Q270 170 250 185 Q230 200 210 185 Q190 170 200 140 Q210 110 235 90 Z" fill="none" stroke="url(#combustionGradient)" stroke-width="1.0" opacity="0.7" />
+
+    <!-- Fluid Flow (Air Intake) -->
+    <path d="M195 60 C185 75 180 100 185 120 C190 140 200 145 205 130 C210 115 205 90 195 60 Z" fill="url(#flowGradient)" opacity="0.5" />
+    <path d="M195 60 C188 68 185 90 188 105 C191 120 198 125 202 110 C205 95 202 75 195 60 Z" fill="none" stroke="url(#flowGradient)" stroke-width="1.0" opacity="0.7" />
+
+    <!-- Fluid Flow (Exhaust) -->
+    <path d="M275 60 C285 75 290 100 285 120 C280 140 270 145 265 130 C260 115 265 90 275 60 Z" fill="url(#flowGradient)" opacity="0.5" />
+    <path d="M275 60 C282 68 285 90 282 105 C279 120 272 125 268 110 C265 95 268 75 275 60 Z" fill="none" stroke="url(#flowGradient)" stroke-width="1.0" opacity="0.7" />
+
+    <!-- Additional dynamic lines for general energy/flow -->
+    <path d="M160 220 C130 270 130 320 160 370" fill="none" stroke="#d97706" stroke-width="1.0" opacity="0.6" />
+    <path d="M310 220 C340 270 340 320 310 370" fill="none" stroke="#b45309" stroke-width="1.0" opacity="0.6" />
+    <path d="M175 320 C155 340 155 360 175 380" fill="none" stroke="#0284c7" stroke-width="0.8" opacity="0.5" />
+    <path d="M295 320 C315 340 315 360 295 380" fill="none" stroke="#0284c7" stroke-width="0.8" opacity="0.5" />
+  </g>
+          </svg>
+        </div>
+      </body>
+    </html>
+  

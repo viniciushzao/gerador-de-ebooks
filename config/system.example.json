@@ -1,0 +1,17 @@
+{
+  "AUTHOR_NAME": "VINÍCIUS HIQUE DA SILVA PROENÇA",
+  "TARGET_AUDIENCE": "PESSOAS QUE LEEM O MESMO TEMA DO LIVRO ANEXADO",
+  "TONE_OF_VOICE": "FACILITADOR DO ENTENDIMENTO DO LIVRO INICIAL",
+  "MIN_PAGES": 70,
+  "MAX_PAGES": 100,
+  "VECTOR_DB_PROVIDER": "ChromaDB",
+  "LLM_MODEL": "gemini-3.5-flash-lite",
+  "DESIGN_TYPOGRAPHY": "Garamond",
+  "DESIGN_SPACING": 1.15,
+  "AVAILABLE_TYPOGRAPHIES": [
+    "Garamond",
+    "Baskerville",
+    "Palatino Linotype",
+    "Georgia"
+  ]
+}
